@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   return {
+    pathPrefix: "/blog",
     dir: {
       input: "src",
       output: "public",
